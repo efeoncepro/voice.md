@@ -1,0 +1,65 @@
+{
+  "name": "@efeonce/voice.md",
+  "version": "0.1.0-alpha.3",
+  "description": "Format specification for describing a brand's communicational identity to AI agents. VOICE.md is to copy and tone what DESIGN.md is to visual identity.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "voice-md": "bin/voice-md.js",
+    "voicemd": "bin/voice-md.js"
+  },
+  "scripts": {
+    "test": "node test/run.js",
+    "lint:self": "node bin/voice-md.js lint examples/VOICE.md"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./linter": "./src/linter.js",
+    "./diff": "./src/diff.js",
+    "./exporters": "./src/exporters.js"
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "docs/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "yaml": "^2.4.0"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.96.0"
+  },
+  "keywords": [
+    "voice",
+    "brand-voice",
+    "tone-of-voice",
+    "design-tokens",
+    "voice-tokens",
+    "ai-agents",
+    "llm",
+    "copywriting",
+    "brand-guidelines",
+    "linter",
+    "spec",
+    "markdown"
+  ],
+  "author": {
+    "name": "Efeonce Group SpA",
+    "url": "https://efeoncepro.com"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/efeoncepro/voice.md.git"
+  },
+  "bugs": {
+    "url": "https://github.com/efeoncepro/voice.md/issues"
+  },
+  "homepage": "https://github.com/efeoncepro/voice.md#readme"
+}
